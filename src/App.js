@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import Header from './components/Header';
+import Layout from './components/Layout';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="Эта игра о покемонах" />
+      <Layout title="Первый лояут"
+              desc="Что-то"
+              />
+      <Layout id="1" 
+              title="Какой-то загаловок"
+              descr="Какое-то описание"
+              urlBg="../assets/bg1.jpg"
+              colorBg="black"
+              />
+      <Layout />
+      <Footer />
+    </>
   );
 }
 
